@@ -4,6 +4,10 @@ const { resolve } = require('path');
 const app = express();
 const port = 3010;
 
+const userSchema=require("./schema");
+
+
+
 app.use(express.static('static'));
 
 app.get('/', (req, res) => {
